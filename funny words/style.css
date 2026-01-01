@@ -1,0 +1,44 @@
+/* ===== Body & Background ===== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #162447);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    color: white;
+}
+
+/* ===== Button Style ===== */
+button {
+    padding: 20px 50px;
+    font-size: 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #e94560;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.2);
+    background: #d7375f;
+}
+
+/* ===== Funny Messages ===== */
+.funny-message {
+    position: absolute;
+    font-weight: bold;
+    pointer-events: none;
+    user-select: none;
+    animation: floatUp 2.5s forwards;
+}
+
+@keyframes floatUp {
+    0% { opacity: 1; transform: translateY(0) rotate(0deg); }
+    100% { opacity: 0; transform: translateY(-250px) rotate(720deg); }
+}
